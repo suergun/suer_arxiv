@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb}
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\tmaffiliation}[1]{\\ #1}
+\newcommand{\tmop}[1]{\ensuremath{\operatorname{#1}}}
+%%%%%%%%%% End TeXmacs macros
+
+\begin{document}
+
+
+\begin{center}
+  $f (x) = \sum^{\infty}_{n = 0} \cos (x + n \pi)$
+
+\end{center}
+
+\begin{center}
+  $= \sum^{\infty}_{n = 0} \tmop{Re} [e^{^{i (x + n \pi)}}]$
+
+\end{center}
+
+\begin{center}
+ $= \tmop{Re} \left[ \sum^{\infty}_{n = 0} e^{^{i (x + n \pi)}} \right]$
+
+\end{center}
+
+\begin{center}
+ = $\tmop{Re} \left[ e^{^{ix}} \sum^{\infty}_{n = 0} (e^{^{in \pi}})
+  \right]$.
+
+\end{center}
+
+\begin{center}
+$\sum^{\infty}_{n = 0} (e^{^{in \pi}}) = 1 / 1 - e^{^{i \pi}} = 1 / 2.$
+
+\end{center}
+
+\begin{center}
+  $\tmop{Re} \left[ e^{^{ix}} \sum^{\infty}_{n = 0} (e^{^{in \pi}}) \right]$
+
+\end{center}
+  
+\begin{center}
+  $= \tmop{Re} [e^{^{ix}} / 2]$
+
+\end{center}
+
+\begin{center}  
+  $=^{^{}} \cos (x) / 2.$
+
+\end{center}
+
+\begin{center}
+  $f (x) = \sum^{\infty}_{n = 0} \cos (x + n \pi) =^{^{}} \cos (x) / 2.$
+
+\end{center}
+
+\begin{center}
+  $f (0) = \sum^{\infty}_{n = 0} \cos (n \pi) = 1 - 1 + 1 - 1 + \cdot \cdot
+  \cdot = \sum^{\infty}_{n = 0} (- 1)^{^n} = \cos (0) / 2 = 1 / 2.$
+
+\end{center}
+
+\begin{center}
+  $\sum^{\infty}_{n = 0} (- 1)^{^n} = 1 / 2.$
+
+\end{center}
+
+\end{document}
